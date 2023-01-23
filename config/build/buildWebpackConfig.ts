@@ -10,7 +10,7 @@ export function buildWebpackConfig (options: BuildOptions): webpack.Configuratio
 
     return {
         mode,
-        entry: paths.src,
+        entry: paths.entry,
         output: {
             filename: '[name].[contenthash].js',
             path: paths.build,
