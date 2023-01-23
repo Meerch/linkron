@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Trade+Winds&display=swap');
 @import "reset";
 @import "./themes/light";
 @import "./themes/dark";
 @import "./variables/global";
 
 body {
+    font-family: var(--font-family-main)!important;
     color: var(--primary-color);
     font: var(--font-m);
 }

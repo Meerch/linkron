@@ -11,6 +11,8 @@
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
+    "storybook": "start-storybook -p 6006 -c ./config/storybook",
+    "build-storybook": "build-storybook -c ./config/storybook",
     "postinstall": "node scripts/clear-cache.js"
   },
   "keywords": [
@@ -31,6 +33,14 @@
     "@babel/runtime": "^7.20.7",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@reduxjs/toolkit": "^1.9.1",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
     "@svgr/webpack": "^6.5.1",
     "@types/babel__core": "^7.20.0",
     "@types/node": "^18.11.18",
@@ -63,8 +73,8 @@
     "i18next-http-backend": "^2.1.1",
     "mini-css-extract-plugin": "^2.7.2",
     "react-refresh": "^0.14.0",
-    "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
+    "storybook-addon-themes": "^6.1.0",
     "style-loader": "^3.3.1",
     "stylelint": "^14.16.1",
     "ts-loader": "^9.4.2",
@@ -83,6 +93,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^12.1.4",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.7.0"
+    "react-router-dom": "^6.7.0",
+    "sass": "^1.57.1"
   }
 }

@@ -1,7 +1,12 @@
+// declare module '*.scss' {
+//     type IClassNames = Record<string, string>
+//     const classNames: IClassNames
+//     export = classNames
+// }
+
 declare module '*.scss' {
-    type IClassNames = Record<string, string>
-    const classNames: IClassNames
-    export = classNames
+    const content: Record<string, string>
+    export default content
 }
 
 declare module '*.png'

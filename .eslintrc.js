@@ -6,7 +6,7 @@ module.exports = {
     extends: [
         'plugin:react/recommended',
         'standard-with-typescript',
-        // 'plugin:i18next/recommended',
+        'plugin:i18next/recommended',
         'plugin:storybook/recommended'
     ],
     overrides: [{
@@ -26,8 +26,8 @@ module.exports = {
         files: ['*.stories.tsx'],
         rules: {
             '@typescript-eslint/no-unsafe-assignment': 'off',
-            '@typescript-eslint/no-unsafe-member-access': 'off'
-            // 'i18next/no-literal-string': 'off'
+            '@typescript-eslint/no-unsafe-member-access': 'off',
+            'i18next/no-literal-string': 'off'
         }
     }, {
         files: ['*.config.ts'],
@@ -56,7 +56,7 @@ module.exports = {
     plugins: [
         'react',
         '@typescript-eslint',
-        // 'i18next',
+        'i18next',
         'react-hooks',
         'fsd-plugin-fsd',
         'unused-imports'
@@ -80,9 +80,9 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         'no-underscore-dangle': 'off',
         '@typescript-eslint/naming-convention': 'off',
-        // 'i18next/no-literal-string': ['error', {
-        //     markupOnly: true
-        // }],
+        'i18next/no-literal-string': ['error', {
+            markupOnly: true
+        }],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
         'react/display-name': 'off',
